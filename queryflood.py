@@ -36,10 +36,6 @@ class SAMPQuery:
 
         # Let's send and receive some information
         self.s.send(self.createQuery("i"))
-        self.data = self.s.recv(1024)
-
-        # An empty dictonary
-        server_info = {'online_players': self.hexbytes2int(self.forwardByte(2))}
 
         return server_info
 
