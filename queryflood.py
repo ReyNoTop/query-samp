@@ -76,6 +76,5 @@ if __name__ == '__main__':
         try:
             samp = SAMPQuery("51.81.51.165", 7777)
             print samp.getBasicInfo()
-            print "Paquete enviado"
         except EOFError:
                 break
